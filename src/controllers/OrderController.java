@@ -6,6 +6,7 @@ import ui.StatisticsMenu;
 import statistics.CoffeeTypeCounter;
 
 public class OrderController {
+    // should mabye be changed later
     public static void MainMenu(){
         OrderTakingMenu orderMenu = new OrderTakingMenu();
         StatisticsMenu statisticsMenu = new StatisticsMenu();
