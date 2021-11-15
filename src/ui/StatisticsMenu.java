@@ -15,13 +15,26 @@ public class StatisticsMenu {
     public void printStatisticsChoice(){
         System.out.println("1. Coffee statistics");
         System.out.println("2. Food statistics");
+        System.out.println("3. All statistics");
     }
-
-    public void displayCoffeeStatistics(){
+    public static void choice(int userInput){
+        if(userInput == 1){
+            displayCoffeeStatistics();
+        }else if(userInput == 2){
+            displayFoodStatistics();
+        }else if(userInput == 3){
+            displayAllStatistics();
+        }
+    }
+    public static void displayCoffeeStatistics(){
         System.out.println(CoffeeTypeCounter.howManyCoffeesSold());
     }
 
-    public void displayFoodStatistics(){
+    public static void displayFoodStatistics(){
         System.out.println(CoffeeTypeCounter.howManyFoodsSold());
+    }
+
+    public static void displayAllStatistics(){
+        System.out.println(CoffeeTypeCounter.howManySoldInTotal());
     }
 }

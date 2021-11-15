@@ -17,18 +17,18 @@ public class CoffeeTypeCounter {
         teas++;
     }
     public static void oneCroissantSold(){
-        teas++;
+        croissants++;
     }
     public static void oneBaguetteSold(){
-        teas++;
+        baguettes++;
     }
 
     public static int howManyCoffeesSold(){
-        return americanos + espressos + teas + croissants + baguettes;
+        return americanos + espressos + teas;
     }
 
     public static int howManyFoodsSold(){
-        return americanos + espressos + teas + croissants + baguettes;
+        return croissants + baguettes;
     }
 
     public static int howManySoldInTotal(){

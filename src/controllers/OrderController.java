@@ -39,8 +39,10 @@ public class OrderController {
                     CoffeeTypeCounter.oneCroissantSold();
                     break;
                 case 6:
+                    int ChoiceInput=0;
                     statisticsMenu.printStatisticsChoice();
-                    statisticsMenu.receiveUserInput();
+                    ChoiceInput = statisticsMenu.receiveUserInput();
+                    StatisticsMenu.choice(ChoiceInput);
                     break;
             }
         }while(userInput != 9);
