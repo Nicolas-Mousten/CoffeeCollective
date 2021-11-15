@@ -3,6 +3,7 @@ package controllers;
 import products.*;
 import ui.OrderTakingMenu;
 import ui.StatisticsMenu;
+import statistics.CoffeeTypeCounter;
 
 public class OrderController {
     public static void MainMenu(){
@@ -18,18 +19,23 @@ public class OrderController {
             switch(userInput){
                 case 1:
                     currentCustomer.addToAmericano(new Americano());
+                    CoffeeTypeCounter.oneAmericanoSold();
                     break;
                 case 2:
                     currentCustomer.addToEspresso(new Espresso());
+                    CoffeeTypeCounter.oneEspressoSold();
                     break;
                 case 3:
                     currentCustomer.addToTea(new Tea());
+                    CoffeeTypeCounter.oneTeaSold();
                     break;
                 case 4:
                     currentCustomer.addToBaguette(new Baguette());
+                    CoffeeTypeCounter.oneBaguetteSold();
                     break;
                 case 5:
                     currentCustomer.addToCroissant(new Croissant());
+                    CoffeeTypeCounter.oneCroissantSold();
                     break;
                 case 6:
                     statisticsMenu.printStatisticsChoice();
