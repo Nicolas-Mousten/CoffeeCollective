@@ -28,19 +28,24 @@ public class CustomerBasket {
     public int getTotalPrice(){
         int priceTotal = 0;
         for (int i = 0; i < americansOrdered.size(); i++) {
-            americansOrdered.get(i);
+            int currentPrice = americansOrdered.get(i).getPrice();
+            priceTotal = priceTotal + currentPrice;
         }
         for (int i = 0; i < espressosOrdered.size(); i++) {
-            espressosOrdered.get(i);
+            int currentPrice = espressosOrdered.get(i).getPrice();
+            priceTotal = priceTotal + currentPrice;
         }
         for (int i = 0; i < teaOredered.size(); i++) {
-            teaOredered.get(i);
+            int currentPrice = teaOredered.get(i).getPrice();
+            priceTotal = priceTotal + currentPrice;
         }
         for (int i = 0; i < croissantsOrdered.size(); i++) {
-            espressosOrdered.get(i);
+            int currentPrice = espressosOrdered.get(i).getPrice();
+            priceTotal = priceTotal + currentPrice;
         }
         for (int i = 0; i < baguettesOrdered.size(); i++) {
-            baguettesOrdered.get(i);
+            int currentPrice = baguettesOrdered.get(i).getPrice();
+            priceTotal = priceTotal + currentPrice;
         }
         return priceTotal;
     }
