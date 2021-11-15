@@ -24,7 +24,7 @@ public class CoffeeOrderApp {
                     currentCustomer.addToEspresso(new Espresso());
                     break;
                 case 3:
-                    System.out.println("added a croissant");
+                    currentCustomer.addToTea(new Tea());
                     break;
                 case 4:
                     currentCustomer.addToBaguette(new Baguette());
