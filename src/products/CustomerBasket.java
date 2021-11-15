@@ -15,7 +15,7 @@ public class CustomerBasket {
     public void addToEspresso(Espresso order){
         espressosOrdered.add(order);
     }
-    static void addToTea(Tea order){
+    public void addToTea(Tea order){
         teaOredered.add(order);
     }
     public void addToCroissant(Croissant order){
@@ -30,5 +30,18 @@ public class CustomerBasket {
         for (int i = 0; i < americansOrdered.size(); i++) {
             americansOrdered.get(i);
         }
+        for (int i = 0; i < espressosOrdered.size(); i++) {
+            espressosOrdered.get(i);
+        }
+        for (int i = 0; i < teaOredered.size(); i++) {
+            teaOredered.get(i);
+        }
+        for (int i = 0; i < croissantsOrdered.size(); i++) {
+            espressosOrdered.get(i);
+        }
+        for (int i = 0; i < baguettesOrdered.size(); i++) {
+            baguettesOrdered.get(i);
+        }
+        return priceTotal;
     }
 }
