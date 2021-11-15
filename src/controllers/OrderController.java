@@ -1,5 +1,6 @@
 package controllers;
 
+import database.ReceiptDatabase;
 import products.*;
 import ui.OrderTakingMenu;
 import ui.StatisticsMenu;
@@ -48,5 +49,7 @@ public class OrderController {
                     break;
             }
         }while(userInput != 9);
+
+        ReceiptDatabase.addToDatabase(currentCustomer);
     }
 }
