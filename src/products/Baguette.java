@@ -29,4 +29,14 @@ public class Baguette {
     public void setCroissantPrice(int croissantPrice) {
         this.croissantPrice = croissantPrice;
     }
+
+    @Override
+    public String toString() {
+        return "Baguette{" +
+                "title='" + title + '\'' +
+                ", croissantTitle='" + croissantTitle + '\'' +
+                ", price=" + price +
+                ", croissantPrice=" + croissantPrice +
+                '}';
+    }
 }

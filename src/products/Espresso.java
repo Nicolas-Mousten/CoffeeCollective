@@ -11,4 +11,12 @@ public class Espresso {
     public int getPrice() {
         return price;
     }
+
+    @Override
+    public String toString() {
+        return "Espresso{" +
+                "title='" + title + '\'' +
+                ", price=" + price +
+                '}';
+    }
 }

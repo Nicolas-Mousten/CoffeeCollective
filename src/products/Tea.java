@@ -11,4 +11,12 @@ public class Tea {
     public int getPrice() {
         return price;
     }
+
+    @Override
+    public String toString() {
+        return "Tea{" +
+                "title='" + title + '\'' +
+                ", price=" + price +
+                '}';
+    }
 }

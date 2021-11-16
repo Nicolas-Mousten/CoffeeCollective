@@ -49,7 +49,7 @@ public class OrderController {
                     break;
             }
         }while(userInput != 9);
-
+        System.out.println(currentCustomer);
         ReceiptDatabase.addToDatabase(currentCustomer);
     }
 }

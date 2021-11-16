@@ -16,4 +16,12 @@ public class Croissant {
     public int getPrice() {
         return price;
     }
+
+    @Override
+    public String toString() {
+        return "Croissant{" +
+                "title='" + title + '\'' +
+                ", price=" + price +
+                '}';
+    }
 }

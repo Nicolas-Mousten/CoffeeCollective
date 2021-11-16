@@ -4,7 +4,9 @@ import products.CustomerBasket;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class ReceiptDatabase {
@@ -17,8 +19,9 @@ public class ReceiptDatabase {
         while(fileScanner.hasNext()){
             String line = fileScanner.nextLine();
             String[] lineArray = line.split(";");
-            CustomerBasket temp = new CustomerBasket();
-            temp.setAmericansOrdered(lineArray[0]);
+            ArrayList<Object> tempObject = new ArrayList<Object>(Arrays.asList(lineArray));
+
+
         }
 
 

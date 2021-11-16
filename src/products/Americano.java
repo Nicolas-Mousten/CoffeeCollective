@@ -14,4 +14,12 @@ public class Americano {
     public int getPrice() {
         return price;
     }
+
+    @Override
+    public String toString() {
+        return "Americano{" +
+                "title='" + title + '\'' +
+                ", price=" + price +
+                '}';
+    }
 }
