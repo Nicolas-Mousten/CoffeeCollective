@@ -2,7 +2,7 @@ package products;
 
 public class Tea {
     private String title = "Tea";
-    private int price = 60;
+    private int price = 6;
 
     public String getTitle() {
         return title;

@@ -2,9 +2,7 @@ package products;
 
 public class Baguette {
     private String title = "Baguette";
-    private String croissantTitle = "Croissant";
     private int price = 30;
-    private int croissantPrice = 20;
 
     public String getTitle() {
         return title;
@@ -22,21 +20,11 @@ public class Baguette {
         this.price = price;
     }
 
-    public int getCroissantPrice() {
-        return croissantPrice;
-    }
-
-    public void setCroissantPrice(int croissantPrice) {
-        this.croissantPrice = croissantPrice;
-    }
-
     @Override
     public String toString() {
         return "Baguette{" +
                 "title='" + title + '\'' +
-                ", croissantTitle='" + croissantTitle + '\'' +
                 ", price=" + price +
-                ", croissantPrice=" + croissantPrice +
                 '}';
     }
 }

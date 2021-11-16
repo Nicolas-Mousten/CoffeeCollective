@@ -89,4 +89,15 @@ public class CustomerBasket {
     public void setBaguettesOrdered(ArrayList<Baguette> baguettesOrdered) {
         this.baguettesOrdered = baguettesOrdered;
     }
+
+    @Override
+    public String toString() {
+        return "CustomerBasket{" +
+                "americansOrdered=" + americansOrdered +
+                ", espressosOrdered=" + espressosOrdered +
+                ", teaOredered=" + teaOredered +
+                ", croissantsOrdered=" + croissantsOrdered +
+                ", baguettesOrdered=" + baguettesOrdered +
+                '}';
+    }
 }
