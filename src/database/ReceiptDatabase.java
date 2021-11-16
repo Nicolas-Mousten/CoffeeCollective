@@ -16,8 +16,9 @@ public class ReceiptDatabase {
         try(FileWriter fw = new FileWriter("Resources/Receipts.csv", true);
             BufferedWriter bw = new BufferedWriter(fw);
             PrintWriter out = new PrintWriter(bw)){
+            int totalPrice = currentCustomer.getTotalPrice();
             String inputString = currentCustomer.toString();
-            out.println(inputString);
+            out.println(inputString + ";" + totalPrice);
         }catch(IOException e){
             System.out.println("Can't write to this file");
         }

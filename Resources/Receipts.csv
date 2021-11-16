@@ -1,2 +1,0 @@
-CustomerBasket{americansOrdered=[Americano{title='Americano', price=15}, Americano{title='Americano', price=15}], espressosOrdered=[Espresso{title='Espresso', price=40}], teaOredered=[], croissantsOrdered=[], baguettesOrdered=[Baguette{title='Baguette', price=30}]}
-CustomerBasket{americansOrdered=[Americano{title='Americano', price=15}], espressosOrdered=[], teaOredered=[], croissantsOrdered=[], baguettesOrdered=[Baguette{title='Baguette', price=30}]}

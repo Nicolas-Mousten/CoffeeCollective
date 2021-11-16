@@ -40,7 +40,7 @@ public class CustomerBasket {
             priceTotal = priceTotal + currentPrice;
         }
         for (int i = 0; i < croissantsOrdered.size(); i++) {
-            int currentPrice = espressosOrdered.get(i).getPrice();
+            int currentPrice = croissantsOrdered.get(i).getPrice();
             priceTotal = priceTotal + currentPrice;
         }
         for (int i = 0; i < baguettesOrdered.size(); i++) {
