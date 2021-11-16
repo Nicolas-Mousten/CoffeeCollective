@@ -2,13 +2,13 @@ package products;
 
 public class Tea {
     private String title = "Tea";
-    private int price = 6;
+    private static int price = 6;
 
     public String getTitle() {
         return title;
     }
 
-    public int getPrice() {
+    public static int getPrice() {
         return price;
     }
 

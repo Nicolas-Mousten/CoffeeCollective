@@ -2,7 +2,7 @@ package products;
 
 public class Americano {
     private String title = "Americano";
-    private int price = 15;
+    private static int price = 15;
 
     public Americano(){}
 
@@ -11,7 +11,7 @@ public class Americano {
         return title;
     }
 
-    public int getPrice() {
+    public static int getPrice() {
         return price;
     }
 

@@ -2,7 +2,7 @@ package products;
 
 public class Baguette {
     private String title = "Baguette";
-    private int price = 30;
+    private static int price = 30;
 
     public String getTitle() {
         return title;
@@ -12,7 +12,7 @@ public class Baguette {
         this.title = title;
     }
 
-    public int getPrice() {
+    public static int getPrice() {
         return price;
     }
 

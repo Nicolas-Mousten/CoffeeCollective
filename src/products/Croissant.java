@@ -2,13 +2,13 @@ package products;
 
 public class Croissant {
     private String title = "Croissant";
-    private int price = 20;
+    private static int price = 20;
 
     public String getTitle() {
         return title;
     }
 
-    public int getPrice() {
+    public static int getPrice() {
         return price;
     }
 

@@ -7,7 +7,7 @@ import ui.StatisticsMenu;
 import statistics.CoffeeTypeCounter;
 
 public class OrderController {
-    // should mabye be changed later
+    // should maybe be changed later
     public static void MainMenu(){
         OrderTakingMenu orderMenu = new OrderTakingMenu();
         StatisticsMenu statisticsMenu = new StatisticsMenu();
@@ -49,7 +49,7 @@ public class OrderController {
                     break;
             }
         }while(userInput != 9);
-        System.out.println(currentCustomer);
+        System.out.println(currentCustomer+" Total Price: "+currentCustomer.getTotalPrice());
         ReceiptDatabase.addToDatabase(currentCustomer);
     }
 }

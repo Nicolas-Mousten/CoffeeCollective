@@ -1,5 +1,10 @@
 package ui;
 
+import products.Americano;
+import products.Baguette;
+import products.Croissant;
+import products.Tea;
+
 import java.util.Scanner;
 
 public class OrderTakingMenu {
@@ -16,12 +21,12 @@ public class OrderTakingMenu {
     }
 
     public void printOptions(){
-        System.out.println("1. Americano");
-        System.out.println("2. Espresso");
-        System.out.println("3. Tea");
-        System.out.println("4. Croissant");
-        System.out.println("5. Baguette");
-        System.out.println("6. statistics");
-        System.out.println("9. Quit");
+        System.out.println("1. Americano    Price: "+ Americano.getPrice());
+        System.out.println("2. Espresso     Price: "+ Baguette.getPrice());
+        System.out.println("3. Tea          Price: "+ Tea.getPrice());
+        System.out.println("4. Croissant    Price: "+ Croissant.getPrice());
+        System.out.println("5. Baguette     Price: "+ Baguette.getPrice());
+        System.out.println("6. Statistics");
+        System.out.println("9. Place order");
     }
 }
