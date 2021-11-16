@@ -32,12 +32,12 @@ public class OrderController {
                     CoffeeTypeCounter.oneTeaSold();
                     break;
                 case 4:
-                    currentCustomer.addToBaguette(new Baguette());
-                    CoffeeTypeCounter.oneBaguetteSold();
-                    break;
-                case 5:
                     currentCustomer.addToCroissant(new Croissant());
                     CoffeeTypeCounter.oneCroissantSold();
+                    break;
+                case 5:
+                    currentCustomer.addToBaguette(new Baguette());
+                    CoffeeTypeCounter.oneBaguetteSold();
                     break;
                 case 6:
                     int ChoiceInput = 0;

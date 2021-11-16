@@ -49,4 +49,44 @@ public class CustomerBasket {
         }
         return priceTotal;
     }
+
+    public ArrayList<Americano> getAmericansOrdered() {
+        return americansOrdered;
+    }
+
+    public ArrayList<Espresso> getEspressosOrdered() {
+        return espressosOrdered;
+    }
+
+    public ArrayList<Tea> getTeaOredered() {
+        return teaOredered;
+    }
+
+    public ArrayList<Croissant> getCroissantsOrdered() {
+        return croissantsOrdered;
+    }
+
+    public ArrayList<Baguette> getBaguettesOrdered() {
+        return baguettesOrdered;
+    }
+
+    public void setAmericansOrdered(ArrayList<Americano> americansOrdered) {
+        this.americansOrdered = americansOrdered;
+    }
+
+    public void setEspressosOrdered(ArrayList<Espresso> espressosOrdered) {
+        this.espressosOrdered = espressosOrdered;
+    }
+
+    public void setTeaOredered(ArrayList<Tea> teaOredered) {
+        this.teaOredered = teaOredered;
+    }
+
+    public void setCroissantsOrdered(ArrayList<Croissant> croissantsOrdered) {
+        this.croissantsOrdered = croissantsOrdered;
+    }
+
+    public void setBaguettesOrdered(ArrayList<Baguette> baguettesOrdered) {
+        this.baguettesOrdered = baguettesOrdered;
+    }
 }
