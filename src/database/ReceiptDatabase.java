@@ -4,10 +4,8 @@ package database;
 import products.CustomerBasket;
 
 import java.io.*;
-import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Scanner;
+
 
 public class ReceiptDatabase {
     public static ArrayList<CustomerBasket> memoryList = new ArrayList<>();
